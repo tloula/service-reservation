@@ -29,7 +29,7 @@ A simple admin panel shows an overview of total service reservations, as well as
 ### Admin Panel
 * Add the services div: `<div id="services"></div>`
 * Add the reservations div: `<div id="details"></div>`
-* Include the required JavaScript `<script src="admin.js"></script>`
+* Include the required JavaScript: `<script src="admin.js"></script>`
 
 ### Backend
 * Setup the database using the [tables.sql](tables.sql) file
