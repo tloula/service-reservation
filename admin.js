@@ -3,19 +3,18 @@ function loadServices(service){
         const data = json;
 
         var list = "<table class='table'>";
-        list += "<thead style='font-weight: bold;'><tr><td>Date & Time</td><td>Seats</td><td></td></tr></thead><tbody>";
+        list += "<thead style='font-weight: bold;'><tr><td>Date & Time</td><td>#</td></tr></thead><tbody>";
         jQuery.each(data.services, function (id, val) {
             list += "<tr>"
-            list += "<td>" + val.prettydt + "</td>";
+            list += "<td><a class='details' style='cursor: pointer;' id='" + val.id + "'>" + val.prettydt + "</a></td>";
             list += "<td>" + val.reserved + "</td>";
-            list += "<td><a class='details' style='cursor: pointer;' id='" + val.id + "'>Details</a></td>";
             list += "</tr>";
         });
         list += "</tbody></table>";
         jQuery("#services").empty().append(list);
 
         list = "<table class='table'>";
-        list += "<thead style='font-weight: bold;'><tr><td>First</td><td>Last</td><td>Email</td><td>Seats</td><td>Timestamp (EDT)</td></tr></thead><tbody>";
+        list += "<thead style='font-weight: bold;'><tr><td>First</td><td>Last</td><td>Email</td><td>#</td><td>Timestamp (EDT)</td></tr></thead><tbody>";
         jQuery.each(data.reservations, function (id, val) {
             list += "<tr>"
             list += "<td>" + val.first + "</td>";
