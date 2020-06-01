@@ -56,7 +56,7 @@ try {
     $stmt->execute();
     $result = $stmt->get_result();
     while($row = $result->fetch_assoc()) {
-        $reservations[$row['id']] = new reservation($row['timestamp'], $row['first'], $row['last'], $row['email'], $row['seats']);
+        $reservations[$row['id']] = new reservation(date( 'F j Y, g:i A', strtotime(OFFSET, strtotime($row['timestamp']))), $row['first'], $row['last'], $row['email'], $row['seats']);
     }
     if(!$reservations) throw new Exception("Critical Error: Cannot find reservations.");
     $stmt->close();

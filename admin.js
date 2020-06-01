@@ -14,7 +14,7 @@ function loadServices(service){
         jQuery("#services").empty().append(list);
 
         list = "<table class='table'>";
-        list += "<thead style='font-weight: bold;'><tr><td>First</td><td>Last</td><td>Email</td><td>#</td><td>Timestamp (EDT)</td></tr></thead><tbody>";
+        list += "<thead style='font-weight: bold;'><tr><td>First</td><td>Last</td><td>Email</td><td>#</td><td>Timestamp (CT)</td></tr></thead><tbody>";
         jQuery.each(data.reservations, function (id, val) {
             list += "<tr>"
             list += "<td>" + val.first + "</td>";
