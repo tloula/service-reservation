@@ -1,0 +1,19 @@
+<form action="../apps/service-registration/process.php" class="request-form" method="post">
+    <label for="service">Select Service:<span style="float: right;"><small>(Required)</small></span></label><br>
+    <select id="service" name="service" style="margin-bottom: 10px; width: 100%; float: left; padding: 10px;" required>
+        <option value="1">Thursday 7:00 PM</option>
+        <option value="2">Sunday 9:00 AM</option>
+        <option value="3">Sunday 10:45 AM</option>
+    </select>
+    <label for="first">First Name:<span style="float: right;"><small>(Required)</small></span></label><br>
+    <input type="text" id="first" name="first" style="margin-bottom: 10px; float: left;" minlength="3" maxlength="50" required>
+    <label for="last">Last Name:</label><br>
+    <input type="text" id="last" name="last" style="margin-bottom: 10px; float: left;"  minlength="3" maxlength="50">
+    <label for="email">Email:<span style="float: right;"><small>(Required)</small></span></label><br>
+    <input type="email" id="email" name="email" style="margin-bottom: 10px; float: left;" required>
+    <label for="seats">Party of:<span style="float: right;"><small>(Required)</small></span></label><br>
+    <input type="number" min="1" max="10" id="seats" name="seats" style="margin-bottom: 10px; width: 100%; padding: 8px 15px;" required>
+    <div id="form-message"></div>
+    <input type="submit" class="fusion-button button-flat fusion-button-default-size button-default button-1 fusion-button-span-yes fusion-button-default-type" value="Request Seats">
+    <input type="text" id="website" name="website" style="display:none !important" tabindex="-1" value="" autocomplete="off">
+</form>
