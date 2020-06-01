@@ -23,8 +23,8 @@ A simple admin panel shows an overview of total service reservations, as well as
 
 ### User Form
 * Copy and paste the code from the [form.html](form.html) file onto the desired webpage and update the `action=""` link to point to the [process.php](process.php) file. May need to customize the CSS.
-* Add the referral div: `div id="ref"></div>`
-* Include the required JavaScript: `script src="process.js"></script>`
+* Add the referral div: `<div id="ref"></div>`
+* Include the required JavaScript: `<script src="process.js"></script>`
 
 ### Admin Panel
 * Add the services div: `<div id="services"></div>`
