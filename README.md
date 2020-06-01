@@ -22,7 +22,7 @@ A simple admin panel shows an overview of total service reservations, as well as
 ## Install
 
 ### User Form
-* Copy and paste the code from the form.html file onto the desired webpage and update the `action=""` link. May need to customize the CSS.
+* Copy and paste the code from the [form.html](form.html) file onto the desired webpage and update the `action=""` link. May need to customize the CSS.
 * Add the referral div: `div id="ref"></div>`
 * Include the required JavaScript: `script src="process.js"></script>`
 
