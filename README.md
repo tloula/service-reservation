@@ -1,4 +1,4 @@
-# Church Service Seat Reservation Program
+# Church Service Seat Reservation API
 
 As churches begin to reopen for in-person services following COVID-19, many churches are choosing to impose a limit on their service capacity in order to stay well within their government guidelines.
 
